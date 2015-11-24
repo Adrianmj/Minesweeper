@@ -1,6 +1,27 @@
 var matrix = [];
 var score = 0;
+var dificultad = 0;
+function showMain(boton){
+	switch(boton.id) {
+    case "opc1":
+        dificultad = 10;
+        break;
+     case "opc2":
+        dificultad = 25;
+        break;
+    case "opc3":
+        dificultad = 40;
+        break;
+    default:
+       console.log("error");
+	}
+	define();
+}
 function define(){
+	document.getElementById("start").style.visibility = "hidden";
+	document.getElementById("main").style.visibility = "visible";
+	document.getElementById("show").style.width = "100px";
+
 	for (var i = 0; i < 10; i++) {
 		for (var j = 0; j < 10; j++) {
 			var element = document.getElementById(i+""+j);
@@ -12,7 +33,7 @@ function define(){
 	};
 	var element = document.getElementById("100");
 	element.addEventListener("click", myFunction);
-	for (var i = 0; i< 40; i++) {
+	for (var i = 0; i< dificultad; i++) {
 		var x = Math.floor(Math.random()*10);
 		var y = Math.floor(Math.random()*10);
 		while (x == 0 && y == 0) {

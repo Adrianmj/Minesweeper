@@ -1,16 +1,37 @@
 body{
+	height:100%;
+	width: 100%;
 }
 textarea{
 	resize:none;
 }
 
+#start{
+	text-align:center;
+	position:absolute;
+	display: inline-block;
+	margin-left:  27.5%;
+	top: 45%;
+
+	}
+
+#start > button{
+	height: 5em;
+	width: 15em;
+}
 #main{
 	visibility: hidden;
 	position: absolute;
+	margin-left: 30%;
 	top: 0;
-	background-color:yellow; 
 }
-#main > button{
+#show{
+	width: 100px;
+	height: 50px;
+	background-color: #ADF1E2;
+	margin-left: 40.5%;
+}
+#game > button{
 	background-color: gray;
 	margin-top: 3px;
 	width:50px;
