@@ -3,11 +3,12 @@ body {
     width: 100%;
     background-image: url('fondo.jpg');
 }
-#score {
+#score {	
     vertical-align: top;
     margin-left: 45%;
 }
 textarea {
+	position: absolute;
     resize: none;
 }
 strong {

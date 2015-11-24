@@ -43,10 +43,11 @@
 	}
 
 	function showMatrix() {
+
 	    for (var i = 1; i <= 100; i++) {
 	        var casilla = document.getElementById(i);
 	        casilla.style.color = '#EEEEEE';
-	        casilla.innerHTML = "";
+	        casilla.innerHTML = "·";
 	        if (matrix[i] == "B") {
 	            casilla.style.backgroundImage = "url('bomb.png')";
 
@@ -59,46 +60,56 @@
 	    var pos = Number(this.id);
 
 	    if (matrix[pos] == "B") {
+	    	document.getElementById("scoretext").value = score;
+	    	if (localStorage.getItem("value") < score) {
+	    		localStorage.setItem("value", score);
+	    	};
 	        this.style.backgroundImage = "url('bomb.png')";
 	        var botonasos = document.querySelectorAll('#game > button');
 	        for (var i = 1; i <= botonasos.length; i++) {
 	            document.getElementById(i).disabled = true;
-	            document.getElementById(i).innerHTML = "";
+	            document.getElementById(i).innerHTML = ".";
 	        };
 	        showMatrix();
 	        return;
 	    };
 
 	    score = score + 1;
-	    localStorage.setItem("value", score);
+	   
 	    var bombs = 0;
 	    aux = pos + 10;
 	    if (matrix[aux] == "B") {
 	        bombs = bombs + 1;
-	        console.log("abajo");
+	     	console.log("+10");
 	    };
 	    aux = pos - 10;
-	    if (matrix[aux] == "B") {
+	    if (matrix[aux] == "B" ) {
 	        bombs = bombs + 1;
-	        console.log("arriba");
+	        console.log("-10");
 	    };
-	    if (matrix[pos + 11] == "B") {
-	        bombs = bombs + 1;
-	    };
-	    if (matrix[pos - 11] == "B") {
+	    if (matrix[pos + 11] == "B" && pos%10 != 0) {
+	    	console.log("+11");
 	        bombs = bombs + 1;
 	    };
-	    if (matrix[pos + 9] == "B") {
+	    if (matrix[pos - 11] == "B" && pos%10 != 1) {
+	    	console.log("-11");
 	        bombs = bombs + 1;
 	    };
-	    if (matrix[pos - 9] == "B") {
+	    if (matrix[pos + 9] == "B" && pos%10 != 1 ) {
+	    	console.log("+9");
+	        bombs = bombs + 1;
+	    };
+	    if (matrix[pos - 9] == "B" && pos%10 != 0) {
+	    	console.log("-9");
 	        bombs = bombs + 1;
 	    };
 
-	    if (matrix[pos + 1] == "B") {
+	    if (matrix[pos + 1] == "B" && pos%10 !=0) {
+	    	console.log("+1");
 	        bombs = bombs + 1;
 	    };
-	    if (matrix[pos - 1] == "B") {
+	    if (matrix[pos - 1] == "B" && pos%10 != 1) {
+	    	console.log("-1");
 	        bombs = bombs + 1;
 	    };
 	    if (bombs <= 1) {
