@@ -1,0 +1,18 @@
+body{
+}
+textarea{
+	resize:none;
+}
+
+#main{
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	background-color:yellow; 
+}
+#main > button{
+	background-color: gray;
+	margin-top: 3px;
+	width:50px;
+	height: 50px;
+}
