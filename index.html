@@ -11,14 +11,26 @@
 <body>
     <img id="title" src="title.png" alt="">
     <div id="start">
+<<<<<<< HEAD
         <button id="opc1" onclick="showMain(this)">Easy</button>
         <button id="opc2" onclick="showMain(this)">Normal</button>
         <button id="opc3" onclick="showMain(this)">Hard</button>
+=======
+        <button id="opc1" onclick="showMain(this)">Facil</button>
+        <button id="opc2" onclick="showMain(this)">Normal</button>
+        <button id="opc3" onclick="showMain(this)">Dificil</button>
+>>>>>>> refs/remotes/origin/master
     </div>
     <div id="main">
         <div id="score">
             <strong> BEST SCORE</strong>
             <textarea name="scoretext" id="scoretext" cols="30" rows="1" readonly="">0</textarea>
+<<<<<<< HEAD
+=======
+            <script>
+                document.getElementById("scoretext").value = localStorage.getItem("value");
+            </script>
+>>>>>>> refs/remotes/origin/master
         </div>
         <div id="game">
             <button id="1">*</button>
@@ -133,8 +145,12 @@
         </div>
         <br>
         <br>
+<<<<<<< HEAD
         <button id="show" onclick="showMatrix()">Show</button>
         <button id="restart" onclick="window.location.reload()">Restart</button>
+=======
+        <button id="show" onclick="showMatrix()">show</button>
+>>>>>>> refs/remotes/origin/master
     </div>
 
 

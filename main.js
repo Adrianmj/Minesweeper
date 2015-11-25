@@ -1,9 +1,13 @@
 	var matrix = [];
 	var score = 0;
 	var dificultad = 0;
+<<<<<<< HEAD
 	function reset(){
 
 	}
+=======
+
+>>>>>>> refs/remotes/origin/master
 	function showMain(boton) {
 	    switch (boton.id) {
 	        case "opc1":
@@ -28,14 +32,27 @@
 	        var element = document.getElementById(i);
 	        element.addEventListener("click", myFunction);
 	        matrix[i] = 0;
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 	    };
 
 	    var element = document.getElementById("100");
 	    element.addEventListener("click", myFunction);
 	    for (var i = 0; i < dificultad; i++) {
+<<<<<<< HEAD
 	        var x = Math.ceil(Math.random() * 100);
 	        matrix[x] = "B";
+=======
+	        var x = Math.floor(Math.random() * 10);
+	        var y = Math.floor(Math.random() * 10);
+	        while (x == 0 && y == 0) {
+	            x = Math.floor(Math.random() * 10);
+	            y = Math.floor(Math.random() * 10);
+	        };
+	        matrix[x * 10 + y] = "B";
+>>>>>>> refs/remotes/origin/master
 
 	    };
 	}
@@ -58,12 +75,19 @@
 	    var pos = Number(this.id);
 
 	    if (matrix[pos] == "B") {
+<<<<<<< HEAD
 	    	var audio = new Audio('bomb.mp3');
 			audio.play();
+=======
+>>>>>>> refs/remotes/origin/master
 	    	document.getElementById("scoretext").value = score;
 	    	if (localStorage.getItem("value") < score) {
 	    		localStorage.setItem("value", score);
 	    	};
+<<<<<<< HEAD
+=======
+	        this.style.backgroundImage = "url('bomb.png')";
+>>>>>>> refs/remotes/origin/master
 	        var botonasos = document.querySelectorAll('#game > button');
 	        for (var i = 1; i <= botonasos.length; i++) {
 	            document.getElementById(i).disabled = true;
