@@ -1,57 +1,148 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>Minesweeper2015.GitHub.io by Adrianmj</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Minesweeper2015.GitHub.io</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/Adrianmj/Minesweeper2015.github.io" class="btn">View on GitHub</a>
-      <a href="https://github.com/Adrianmj/Minesweeper2015.github.io/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Adrianmj/Minesweeper2015.github.io/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+</head>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+<body>
+    <img id="title" src="title.png" alt="">
+    <div id="start">
+        <button id="opc1" onclick="showMain(this)">Facil</button>
+        <button id="opc2" onclick="showMain(this)">Normal</button>
+        <button id="opc3" onclick="showMain(this)">Dificil</button>
+    </div>
+    <div id="main">
+        <div id="score">
+            <strong> BEST SCORE</strong>
+            <textarea name="scoretext" id="scoretext" cols="30" rows="1" readonly="">0</textarea>
+            <script>
+                document.getElementById("scoretext").value = localStorage.getItem("value");
+            </script>
+        </div>
+        <div id="game">
+            <button id="1">*</button>
+            <button id="2">*</button>
+            <button id="3">*</button>
+            <button id="4">*</button>
+            <button id="5">*</button>
+            <button id="6">*</button>
+            <button id="7">*</button>
+            <button id="8">*</button>
+            <button id="9">*</button>
+            <button id="10">*</button>
+            <br>
+            <button id="11">*</button>
+            <button id="12">*</button>
+            <button id="13">*</button>
+            <button id="14">*</button>
+            <button id="15">*</button>
+            <button id="16">*</button>
+            <button id="17">*</button>
+            <button id="18">*</button>
+            <button id="19">*</button>
+            <button id="20">*</button>
+            <br>
+            <button id="21">*</button>
+            <button id="22">*</button>
+            <button id="23">*</button>
+            <button id="24">*</button>
+            <button id="25">*</button>
+            <button id="26">*</button>
+            <button id="27">*</button>
+            <button id="28">*</button>
+            <button id="29">*</button>
+            <button id="30">*</button>
+            <br>
+            <button id="31">*</button>
+            <button id="32">*</button>
+            <button id="33">*</button>
+            <button id="34">*</button>
+            <button id="35">*</button>
+            <button id="36">*</button>
+            <button id="37">*</button>
+            <button id="38">*</button>
+            <button id="39">*</button>
+            <button id="40">*</button>
+            <br>
+            <button id="41">*</button>
+            <button id="42">*</button>
+            <button id="43">*</button>
+            <button id="44">*</button>
+            <button id="45">*</button>
+            <button id="46">*</button>
+            <button id="47">*</button>
+            <button id="48">*</button>
+            <button id="49">*</button>
+            <button id="50">*</button>
+            <br>
+            <button id="51">*</button>
+            <button id="52">*</button>
+            <button id="53">*</button>
+            <button id="54">*</button>
+            <button id="55">*</button>
+            <button id="56">*</button>
+            <button id="57">*</button>
+            <button id="58">*</button>
+            <button id="59">*</button>
+            <button id="60">*</button>
+            <br>
+            <button id="61">*</button>
+            <button id="62">*</button>
+            <button id="63">*</button>
+            <button id="64">*</button>
+            <button id="65">*</button>
+            <button id="66">*</button>
+            <button id="67">*</button>
+            <button id="68">*</button>
+            <button id="69">*</button>
+            <button id="70">*</button>
+            <br>
+            <button id="71">*</button>
+            <button id="72">*</button>
+            <button id="73">*</button>
+            <button id="74">*</button>
+            <button id="75">*</button>
+            <button id="76">*</button>
+            <button id="77">*</button>
+            <button id="78">*</button>
+            <button id="79">*</button>
+            <button id="80">*</button>
+            <br>
+            <button id="81">*</button>
+            <button id="82">*</button>
+            <button id="83">*</button>
+            <button id="84">*</button>
+            <button id="85">*</button>
+            <button id="86">*</button>
+            <button id="87">*</button>
+            <button id="88">*</button>
+            <button id="89">*</button>
+            <button id="90">*</button>
+            <br>
+            <button id="91">*</button>
+            <button id="92">*</button>
+            <button id="93">*</button>
+            <button id="94">*</button>
+            <button id="95">*</button>
+            <button id="96">*</button>
+            <button id="97">*</button>
+            <button id="98">*</button>
+            <button id="99">*</button>
+            <button id="100">*</button>
+        </div>
+        <br>
+        <br>
+        <button id="show" onclick="showMatrix()">show</button>
+    </div>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+    <script src=main.js>
+        *
+    </script>
+</body>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Adrianmj/Minesweeper2015.github.io">Minesweeper2015.GitHub.io</a> is maintained by <a href="https://github.com/Adrianmj">Adrianmj</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
 </html>
