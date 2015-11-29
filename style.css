@@ -4,6 +4,12 @@ body {
     background-image: url('fondo.jpg');
 }
 
+input ~ input {
+    height: 25px;
+    margin-top: 5px;
+    width: 200px;
+}
+
 a {
     height: 100px;
     width: 200px;
@@ -19,9 +25,12 @@ a {
 }
 
 #Nick {
+    text-align:center;
+    vertical-align:middle;
     background-color: #D8D8D8;
     font-weight: bolder;
-    width: 50px;
+    width: 100px;
+    height: 25px;
 }
 
 #github {
