@@ -3,17 +3,50 @@ body {
     width: 100%;
     background-image: url('fondo.jpg');
 }
-#score {	
+
+a {
+    height: 100px;
+    width: 200px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    /* no underline */
+}
+
+#webGithub {
+    height: 40px;
+    width: 100px;
+}
+
+#Nick {
+    background-color: #D8D8D8;
+    font-weight: bolder;
+    width: 50px;
+}
+
+#github {
+    height: auto;
+    background-color: yellow;
+    position: fixed;
+    top: 0px !important;
+    right: 5px !important;
+    color: black;
+}
+
+#score {
     vertical-align: top;
     margin-left: 45%;
 }
+
 textarea {
-	position: absolute;
+    position: absolute;
     resize: none;
 }
+
 strong {
     background-color: white;
 }
+
 #start {
     text-align: center;
     position: absolute;
@@ -24,10 +57,12 @@ strong {
     right: 0;
     margin-top: 3%;
 }
+
 #start > button {
     height: 5em;
     width: 15em;
 }
+
 #main {
     visibility: hidden;
     position: absolute;
@@ -36,6 +71,7 @@ strong {
     left: 0;
     right: 0;
 }
+
 #show {
     width: 100px;
     height: 50px;
@@ -45,16 +81,18 @@ strong {
     left: 0;
     right: 0;
 }
-#restart{
-	width: 100px;
+
+#restart {
+    width: 100px;
     height: 50px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top:40em;
+    top: 40em;
     left: 0;
     right: 0;
 }
+
 #game {
     height: 430px;
     width: 440px;
@@ -63,6 +101,7 @@ strong {
     left: 0;
     right: 0;
 }
+
 #game > button {
     margin-top: 3px;
     width: 40px;
@@ -70,6 +109,7 @@ strong {
     background-color: #EEEEEE;
     background-size: contain;
 }
+
 #title {
     display: block;
     margin: 0 auto;

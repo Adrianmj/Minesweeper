@@ -53,7 +53,9 @@
 	    };
 	}
 
-
+	function submit(){
+		window.open("submit.html", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=auto, left=auto, width=301, height=400");
+	}
 	function myFunction() {
 	    var pos = Number(this.id);
 
