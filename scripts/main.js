@@ -54,7 +54,14 @@
 	        };
 	    };
 	}
+	function reset(){
+		window.location.reload();
+		for (var i = 1; i <= 100; i++) {
+	        var element = document.getElementById(i).disabled = false;;
+	        
 
+	    };
+	}
 	function submit() {
 	    window.open("submit.html", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=auto, left=auto, width=301, height=400");
 	}
