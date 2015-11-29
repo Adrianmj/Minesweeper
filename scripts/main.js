@@ -49,7 +49,7 @@
 	        casilla.style.color = '#EEEEEE';
 	        casilla.innerHTML = "·";
 	        if (matrix[i] == "B") {
-	            casilla.style.backgroundImage = "url('bomb.png')";
+	            casilla.style.backgroundImage = "url('images/bomb.png')";
 
 	        };
 	    };
@@ -63,7 +63,7 @@
 	    var pos = Number(this.id);
 
 	    if (matrix[pos] == "B") {
-	        var audio = new Audio('bomb.mp3');
+	        var audio = new Audio('audio/bomb.mp3');
 	        audio.play();
 	        document.getElementById("scoretext").value = score;
 	        if (localStorage.getItem("value") < score) {
@@ -84,36 +84,28 @@
 	    aux = pos + 10;
 	    if (matrix[aux] == "B") {
 	        bombs = bombs + 1;
-	        console.log("+10");
 	    };
 	    aux = pos - 10;
 	    if (matrix[aux] == "B") {
 	        bombs = bombs + 1;
-	        console.log("-10");
 	    };
 	    if (matrix[pos + 11] == "B" && pos % 10 != 0) {
-	        console.log("+11");
 	        bombs = bombs + 1;
 	    };
 	    if (matrix[pos - 11] == "B" && pos % 10 != 1) {
-	        console.log("-11");
 	        bombs = bombs + 1;
 	    };
 	    if (matrix[pos + 9] == "B" && pos % 10 != 1) {
-	        console.log("+9");
 	        bombs = bombs + 1;
 	    };
 	    if (matrix[pos - 9] == "B" && pos % 10 != 0) {
-	        console.log("-9");
 	        bombs = bombs + 1;
 	    };
 
 	    if (matrix[pos + 1] == "B" && pos % 10 != 0) {
-	        console.log("+1");
 	        bombs = bombs + 1;
 	    };
 	    if (matrix[pos - 1] == "B" && pos % 10 != 1) {
-	        console.log("-1");
 	        bombs = bombs + 1;
 	    };
 	    if (bombs <= 1) {
