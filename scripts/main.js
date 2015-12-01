@@ -24,7 +24,7 @@
 	function define() {
 	    document.getElementById("start").style.visibility = "hidden";
 	    document.getElementById("main").style.visibility = "visible";
-	    document.getElementById("show").style.width = "100px";
+	    document.getElementById("submit").style.width = "100px";
 	    document.getElementById("title").style.marginTop = "10px";
 	    for (var i = 1; i <= 100; i++) {
 	        var element = document.getElementById(i);
